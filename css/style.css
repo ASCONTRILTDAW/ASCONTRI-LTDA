@@ -12,6 +12,11 @@ body, html{
 	width: 1100px;
 	}
 }
+img
+{
+	height: 65px;
+	width: 130px;
+}
 
 h1{
 	text-transform: uppercase;
@@ -78,7 +83,7 @@ a:focus{
 
 /* Home Style */
 #tf-home{
-	background: url(../img/inicio.jpg);
+	background: url(../img/logoinicio.png);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -102,7 +107,7 @@ a:focus{
 	text-align: center;
 }
 .content{
-	padding: 15% 0 18% 0;
+	padding: 50% 0 0 0;
 	text-align: center;
 }
 /* Navigation */
@@ -318,17 +323,22 @@ ul.why-me li{
 #tf-contact{
 	background: url(../img/08.jpg);
 	background-size: cover;
-	background-position: right;
+	background-position: center;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	padding: 5% 0;
 	text-align: center;
 
 }
-.containerContacto
+/*.containerContacto
 {
-margin-left: 50%;
+float: right;
 
+width: 50%;
+}*/
+.containerDatos
+{
+padding-top: 5%;
 }
 
 form#contact {
@@ -365,6 +375,7 @@ form#contact {
 	border-top: 2px solid #2F937B;
 }
 nav#tf-footer {
+
 	background: #222222;
 	padding: 3% 0 2% 0;
 	color: #f1f1f1;

@@ -48,12 +48,13 @@
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand logo" href="index.html">ASCONTRI LTDA</a>
+
+                      <a href="index.html"><img id="imagen" src="img/logo.jpg"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,7 +70,7 @@
 
                         </li>
                         <li><a href="#tf-nuestraempresa">Nuestra Empresa</a></li>
-                        <li><a href="#tf-portfolio">Portafolio</a></li>
+                        
                         <li><a href="#tf-about">Acerca de nosotros</a></li>
                         <li><a href="#tf-contact">Contacto</a></li>
                       </ul>
@@ -77,13 +78,11 @@
                 </div><!-- /.container-fluid -->
             </nav>
 
-            <div class="container">
+           <div class="container">
                 <div class="content">
-                    <h1>ASCONTRI LTDA</h1>
-                    <h3>Empresa de Asesorías contables y tributarias en el municipio de Rivera.</h3>
-                    <br>
-                    <a href="#tf-contact" class="btn btn-primary my-btn">Contacto</a>
-                    
+                    <!--<h1>ASCONTRI LTDA</h1>
+                    <h3>Empresa de Asesorías contables y tributarias en el municipio de Rivera.</h3>-->
+            
                 </div>
             </div>
         </div>
@@ -135,9 +134,9 @@
                   </div>
                   <div class="media-body">
                     <h4 id="tituloEm" class="media-heading">ASCONTRI LTDA</h4>
-                    <p>Con el propósito de aportar al desarrollo microempresarial del Municipio de Rivera en el Departamento del Huila, como la creación de nuevas fuentes de ingreso y trabajo, se ha direccionado este proyecto a potencializar las actividades comerciales de los pequeños comerciantes, a través de una cultura tributaria que los incentive a realizar sus respectivos pagos a tiempo; razón por la cual se han plasmado una serie de informaciones que servirán para conocer a profundidad el tema que se ha planteado, pues el proyecto consiste en la puesta en marcha de una empresa dedicada a la asesoría contable y tributaria en el casco urbano del Municipio de Rivera.
-                    Las Asesorías contables y tributarias serán ejecutadas por un equipo profesional multidisciplinario y se dedicarán principalmente al asesoramiento a las Mipymes, así como la gestión de las obligaciones contables, laborales, administrativas y financieras de particulares e instituciones.
-                    La principal motivación de asesorías contables y tributarias es la de poder prestar un servicio rápido y de calidad, a todas las áreas de la estructura interna de una empresa que pueden necesitar un soporte especializado, ya que el dinamismo actual del mundo empresarial requiere respuestas agiles a múltiples requerimientos de las diversas áreas de gestión, a la vez que se mantiene en un nivel óptimo el funcionamiento productivo de la empresa para conseguir un adecuado nivel de competitividad.
+                    <p>Con el propósito de aportar al desarrollo microempresarial del Municipio de Rivera en el Departamento del Huila, como la creación de nuevas fuentes de ingreso y trabajo, se ha direccionado este proyecto a potencializar las actividades comerciales de los pequeños comerciantes, a través de una cultura tributaria que los incentive a realizar sus respectivos pagos a tiempo; razón por la cual se han plasmado una serie de informaciones que servirán para conocer a profundidad el tema que se ha planteado, pues el proyecto consiste en la puesta en marcha de una empresa dedicada a la asesoría contable y tributaria en el casco urbano del Municipio de Rivera.</p>
+                    <p>Las Asesorías contables y tributarias serán ejecutadas por un equipo profesional multidisciplinario y se dedicarán principalmente al asesoramiento a las Mipymes, así como la gestión de las obligaciones contables, laborales, administrativas y financieras de particulares e instituciones.</p>
+                    <p>  La principal motivación de asesorías contables y tributarias es la de poder prestar un servicio rápido y de calidad, a todas las áreas de la estructura interna de una empresa que pueden necesitar un soporte especializado, ya que el dinamismo actual del mundo empresarial requiere respuestas agiles a múltiples requerimientos de las diversas áreas de gestión, a la vez que se mantiene en un nivel óptimo el funcionamiento productivo de la empresa para conseguir un adecuado nivel de competitividad.
                     </p>
                   </div>
                 </div>
@@ -264,10 +263,11 @@
     </div>
 
     <div id="tf-contact">
+      
         <div class="containerContacto">
             <div class="section-title">
                 <h3>Contáctenos</h3>
-                <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                
                 <hr>
             </div>
 
@@ -275,34 +275,84 @@
 
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <form id="contact">
+                    <form id="contact" action="php/enviarEmail.php" method="POST">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ecriba su nombre">
+                        <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ecriba su nombre">
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Escriba su email">
+                        <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Escriba su email">
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Asunto">
+                        <input type="text" class="form-control" id="txtAsunto" name="txtAsunto" placeholder="Asunto">
                       </div>
                       <div class="form-group">
-                        <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Mensaje" name="txtMensaje"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary my-btn dark">Enviar</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <nav id="tf-footer">
+        </div>
+        <div class="containerDatos">
+         <div class="media">
+              <div class="section-title">
+                    <h3>Heidy Maecela Aroca Cerquera</h3>
+                    <p>Estudiante Contaduria Publica</p>
+                    <p>celular : </p>
+                     <hr>
+                </div>
+                            
+                <br><br>
+                <div class="col-md-6">
+                 <div class="media">
+                  
+                  <div class="media-body">
+
+                    <div class="section-title">
+                    <h3>Lida Tatiana Zamora Santofimio</h3>
+                    <p>Estudiante Contaduria Publica</p>
+                     <p>celular : </p>
+                     <hr>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                  <div class="section-title">
+                    <h3>Paula Andrea Leguizamo Dussan</h3>
+                    <p>Estudiante Contaduria Publica</p>
+                     <p>celular : </p>
+                     <hr>
+                 </div>
+                
+
+            </div>
+            </div>
+         </div>
+        
+       </div>
+    
+
+<footer>
+       <nav id="tf-footer">
         <div class="container">
            <center>
-               <span> 2017 © ASCONTI LTDA</span>
+             <span> 2017 © ASCONTI LTDA</span>
+             <br>
+             <div class="section-title">
+                   <p>Teléfono : 8747414</p>
+                   <hr>  
+            </div>
+               
           </center>
            
         </div>
     </nav>
+</footer>
+ 
    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
