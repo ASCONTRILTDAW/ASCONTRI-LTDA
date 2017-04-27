@@ -12,6 +12,10 @@ body, html{
 	width: 1100px;
 	}
 }
+.overlay
+{
+	color:#ea8a2a;
+}	
 img
 {
 	height: 65px;
