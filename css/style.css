@@ -19,7 +19,7 @@ background-color:#ea8a2a;
 }
 #tf-menu
 {
-	background-color: #1D1E28;
+	background-color: #ffffff;
 }
 img
 {
@@ -136,7 +136,7 @@ a:focus{
 }
 #sticky {
     padding: 0.5ex;
-    background-color: #6754ad;
+    background-color: #ffffff;
     color: #fff;
     font-size: 2em;
     border-radius: 0.5ex;
@@ -147,7 +147,7 @@ a:focus{
     top: 0;
     width: 100%;
     z-index: 10000;
-    background: #6754ad;
+    background: #ffffff;
     padding: 1% 0;
 }
 #tf-menu.navbar-default .navbar-nav > li > a {
