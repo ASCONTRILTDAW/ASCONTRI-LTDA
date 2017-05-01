@@ -12,15 +12,6 @@ body, html{
 	width: 1100px;
 	}
 }
-	
-#tf-contables	
-{
-background-color:#ea8a2a;
-}
-#tf-menu
-{
-	background-color: #ffffff;
-}
 img
 {
 	height: 65px;
@@ -100,7 +91,7 @@ a:focus{
 	color: #cfcfcf;
 }
 
-#tf-home .overla{
+#tf-home .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -136,7 +127,7 @@ a:focus{
 }
 #sticky {
     padding: 0.5ex;
-    background-color: #ffffff;
+    background-color: #333;
     color: #fff;
     font-size: 2em;
     border-radius: 0.5ex;
@@ -147,11 +138,11 @@ a:focus{
     top: 0;
     width: 100%;
     z-index: 10000;
-    background: #ffffff;
+    background: #222222;
     padding: 1% 0;
 }
 #tf-menu.navbar-default .navbar-nav > li > a {
-	color: #6754ad;
+	color: #C5C5C5;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
