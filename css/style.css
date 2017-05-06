@@ -31,7 +31,7 @@ display: none;
 #sub-menu a
 {
 display: block;
-background-color:#197DB7; 
+background-color:#202E60; 
 
 }
 #tituloEm
@@ -46,7 +46,7 @@ background-color:#197DB7;
 li:hover ul
 {
 	display: inline-block;
-	background-color: #197DB7;
+	background-color: #202E60;
 }
 
 h2{
@@ -79,7 +79,7 @@ a {
 }
 a:hover,
 a:focus{
-	color: #2F937B;
+	color: #202E60;
 	text-decoration: none;
 }
 
@@ -317,7 +317,22 @@ ul.cat.list-inline li a:hover{
 	background-attachment: fixed;
 	padding: 10% 0;
 }
+#tf-precio{
+	background-color: #EECAFE;
+	
 
+}
+.containerPrecio
+{
+	padding: 0 10% 0 10%;
+	text-align: justify;
+
+}
+#tf-precio .overlay{
+	height: auto;
+	background-attachment: fixed;
+	padding: 10% 0;
+}
 img.imagenT
 {
 	
@@ -390,7 +405,7 @@ form#contact {
 	display: block;
 	width: 100%;
 	margin-bottom: 20px;
-	padding: 16px 12px;
+	padding: 10px 12px;
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #555;
